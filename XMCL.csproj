@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>True</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>server-icon.ico</ApplicationIcon>
+    <FileVersion>2.7.0.0</FileVersion>
+    <AssemblyVersion>2.7.0.0</AssemblyVersion>
+    <Copyright>CopyRight © XLBC 2023</Copyright>
+    <Version>2.7.0.0</Version>
+    <UseWindowsForms>False</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="server-icon.png" />
+    <None Remove="小连轨道交通.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="server-icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro" Version="2.4.10" />
+    <PackageReference Include="OneMinecraftLauncher.Core" Version="1.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="server-icon.png" />
+    <Resource Include="小连轨道交通.png" />
+  </ItemGroup>
+
+</Project>
