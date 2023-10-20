@@ -68,13 +68,13 @@ namespace XMCL
 
 
             Core.JavaPath = @"JAVA\bin\javaw.exe"; // Java 默认随软件本体附带，直接引用相对路径
-            // 枫乔：装启动器送 Java 啦~！不需要额外装 Java ，你也能在 Minecraft 的世界里爽一把（喜）
+            
             var ver = (KMCCC.Launcher.Version)SelectGameVersion_ComboBox.SelectedItem;
             var result = Core.Launch(new LaunchOptions
             {
                 Version = ver, //选中启动版本
                 MaxMemory = 4096, //最大新生代内存（1024M = 1G）
-                Authenticator = new OfflineAuthenticator(Offline_PlayerName.Text),//离线启动，正版或者外置我之后想想办法
+                Authenticator = new OfflineAuthenticator(Offline_PlayerName.Text),//离线启动
                 Mode = LaunchMode.MCLauncher, //启动模式（默认）
                 Size = new WindowSize { Height = 768, Width = 1280 } //设置窗口大小（默认）
                 
