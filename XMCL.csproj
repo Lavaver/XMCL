@@ -7,14 +7,16 @@
     <UseWPF>True</UseWPF>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>server-icon.ico</ApplicationIcon>
-    <FileVersion>2.7.0.0</FileVersion>
-    <AssemblyVersion>2.7.0.0</AssemblyVersion>
+    <FileVersion>3.15.7.9</FileVersion>
+    <AssemblyVersion>3.15.7.9</AssemblyVersion>
     <Copyright>CopyRight © XLBC 2023</Copyright>
-    <Version>2.7.0.0</Version>
+    <Version>3.15.0.0</Version>
     <UseWindowsForms>False</UseWindowsForms>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="app.manifest" />
     <None Remove="server-icon.png" />
     <None Remove="小连轨道交通.png" />
   </ItemGroup>
@@ -24,6 +26,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="app.manifest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Costura.Fody" Version="5.7.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="MahApps.Metro" Version="2.4.10" />
     <PackageReference Include="OneMinecraftLauncher.Core" Version="1.1.6" />
   </ItemGroup>
