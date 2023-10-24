@@ -7,10 +7,10 @@
     <UseWPF>True</UseWPF>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>server-icon.ico</ApplicationIcon>
-    <FileVersion>3.15.7.9</FileVersion>
-    <AssemblyVersion>3.15.7.9</AssemblyVersion>
+    <FileVersion>3.16.7.10</FileVersion>
+    <AssemblyVersion>3.16.7.10</AssemblyVersion>
     <Copyright>CopyRight © XLBC 2023</Copyright>
-    <Version>3.15.0.0</Version>
+    <Version>3.16.0.0</Version>
     <UseWindowsForms>False</UseWindowsForms>
     <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
   </PropertyGroup>

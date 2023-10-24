@@ -29,7 +29,30 @@
                     <TextBox x:Name="Offline_PlayerName" HorizontalAlignment="Left" Margin="31,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="297" Background="{x:Null}" metro:TextBoxHelper.Watermark="用户名（填写好后直接启动，自动应用）"/>
 
                 </Grid>
+
             </TabItem>
+
+            <TabItem Header="设置">
+                <Grid Background="White">
+                    <metro:MetroTabControl>
+                        <TabItem Header="Java 设置">
+                            <Grid Background="#FFE5E5E5">
+                                <Label x:Name="UseJavaTitle" Content="使用 Java 的方式" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+                                <RadioButton x:Name="Use_Launcher_Java_Button" Content="使用启动器自带 Java 8（推荐）" HorizontalAlignment="Left" Margin="34,64,0,0" VerticalAlignment="Top" Background="#FFE5E5E5" IsChecked="True"/>
+                                <RadioButton x:Name="Use_Other_Java_Button" Content="使用其他已安装 Java （这两项还没做）" HorizontalAlignment="Left" Margin="34,96,0,0" VerticalAlignment="Top" Background="#FFE5E5E5"/>
+                                <Label x:Name="UseJavaTitle复制__C_" Content="分配内存" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+                                <TextBox x:Name="MemoryUseBox" HorizontalAlignment="Left" Margin="33,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" metro:TextBoxHelper.Watermark="1024M = 1G，请根据实际情况分配内存"/>
+                                <Label x:Name="M_Label" Content="M" HorizontalAlignment="Left" Margin="285,190,0,0" VerticalAlignment="Top"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="版本管理">
+                            <Grid Background="#FFE5E5E5"/>
+                        </TabItem>
+
+                    </metro:MetroTabControl>
+                </Grid>
+            </TabItem>
+
             <TabItem Header="关于">
                 <Grid Background="#FFE5E5E5">
                     <Image x:Name="XLRT_Logo" HorizontalAlignment="Left" Height="100" Margin="664,270,0,0" VerticalAlignment="Top" Width="100" Source="/server-icon.png"/>
